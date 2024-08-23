@@ -1,0 +1,361 @@
+.contact {
+  background: var(--backArticles);
+  display: grid;
+  /* padding: 0 3rem 3rem 3rem; */
+  grid-template-columns: 30% 70%;
+}
+
+.contact_det {
+  font-family: "Alata", sans-serif;
+  font-size: 18px;
+  /* text-align: justify; */
+  width: 100%;
+  background: rgb(93 162 239);
+  color: white;
+  padding: 0 1.5rem;
+}
+
+.contact_det p {
+  text-align: justify;
+}
+
+.contact_det h4 {
+  margin: 0;
+}
+
+.contact_det span {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 1em;
+}
+
+.contact_det_data {
+  display: flex;
+  flex-direction: column;
+}
+.contact_det span ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.contact_det a {
+  color: var(--color-text-yellow);
+}
+
+.iconContact {
+  font-size: 1.7rem;
+  color: white;
+  margin-right: 0.6rem;
+}
+
+.contact_det_data span:last-child .iconContact {
+  transform: rotate(90deg);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form_section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact h2,
+label,
+input,
+textarea {
+  width: 100%;
+  outline: none;
+}
+
+.contact h2 {
+  font-family: "Alata", sans-serif;
+  color: rgb(141 21 17);
+  margin: 1rem 0 0.5rem 0;
+  font-size: large;
+  border-bottom: 1px solid var(--border-sub-main);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form select,
+.form_section input {
+  margin: 3px 0;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid var(--border-sub-main);
+  font-size: 15px;
+}
+
+.form select:focus,
+.form_section input:focus {
+  /* background: var(--focus-input); */
+  border: 3px solid var(--focus-input);
+}
+
+.form select:hover,
+.form_section input:hover {
+  box-shadow: inset 0 -2px 2px rgb(213 211 211);
+}
+
+.form_section_container {
+  width: 100%;
+  margin-top: 0.3em;
+  position: relative;
+}
+
+.form_section_container input {
+  padding-left: 32px;
+}
+
+.form select {
+  width: 100%;
+  outline: none;
+}
+
+.iconForm {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  margin-left: 7px;
+  font-size: 18px;
+  color: var(--color-icon);
+}
+
+.iconFormOk,
+.iconFormError {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+.iconFormError {
+  color: #f44336;
+}
+
+.formSplit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.formSplit2 {
+  grid-template-columns: 50% 50%;
+}
+
+.formSplitCheck {
+  grid-template-columns: 75% 25%;
+}
+
+.formSplitCheck .checkBox {
+  width: 10%;
+  transform: scale(1.5);
+  justify-self: flex-start;
+}
+
+.formSplitCheck .checkBox:hover {
+  box-shadow: none;
+}
+
+.form label {
+  /* grid-column: 1/-1; */
+  font-size: larger;
+  font-weight: 300;
+  margin: 8px 0;
+  font-family: "Alata", sans-serif;
+  color: var(--color-subtitles);
+}
+
+.formSplit3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.optionList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid var(--border-sub-main);
+}
+
+.optionList legend {
+  color: var(--color-subtitles);
+  font-weight: bold;
+  font-size: larger;
+}
+
+.optionList--rates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.optionList--rates label {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: large;
+  color: var(--color-icon);
+}
+
+.optionList--rates input {
+  transform: scale(1.3);
+}
+
+.optionList--rates input:hover {
+  box-shadow: none;
+}
+
+/* Para cuando el formularío proviene de una tarifa seleccionada */
+
+.form_product_choiced {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80px 70%;
+  gap: 5px;
+  align-items: center;
+}
+
+.form_product_choiced h3,
+h4 {
+  width: 100%;
+  margin: 0;
+}
+
+.form_product_choiced h3 {
+  color: var(--color-title-sections);
+}
+
+.form_product_choiced h4 {
+  font-size: large;
+}
+
+.form_product_choiced h4 i:first-child {
+  color: rgb(141 21 17);
+}
+
+.form_product_choiced img {
+  width: 70px;
+  height: 70px;
+}
+
+.form_product_choiced div {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2.3em;
+}
+
+/* captcha */
+
+.captcha {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.captcha-error {
+  margin-top: 1em;
+  width: 100%;
+  font-family: "Alata", sans-serif;
+  color: #f44336;
+  text-align: center;
+  font-size: larger;
+}
+
+.confirmMessage {
+  margin: 0.5em auto;
+  width: 70%;
+  font-family: "Alata", sans-serif;
+  color: var(--color-title-sections);
+  text-align: center;
+  font-size: larger;
+  box-shadow: 0 0 8px 3px rgba(54, 244, 165, 0.5);
+  border-radius: 2px;
+  background-color: rgba(54, 244, 165, 0.3);
+}
+
+.error-confirmMessage {
+  color: #f44336;
+}
+
+/*Validaciones*/
+
+.form_section_container--error {
+  color: #f44336;
+  font-size: medium;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* media queries */
+
+@media screen and (max-width: 767px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_det_data span {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 10px 0;
+  }
+
+  .contact_det_data h4 {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .formSplitCheck .checkBox {
+    transform: scale(2);
+  }
+
+  .form {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .formSplitCheck .checkBox {
+    justify-self: center;
+    width: 100%;
+    /* transform: scale(3); */
+  }
+
+  .formSplit,
+  .formSplit3 {
+    grid-template-columns: 100%;
+  }
+
+  .formSplitCheck {
+    grid-template-columns: 75% 25%;
+  }
+
+  .captcha {
+    margin: 10px 0;
+  }
+}

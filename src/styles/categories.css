@@ -1,0 +1,119 @@
+.category {
+  margin: 0 auto;
+  max-width: 99%;
+}
+
+.category_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 290px);
+  justify-content: center;
+  align-items: stretch; /*alinea el contenido verticalmente al tamaño de todo el grid de la fila*/
+  gap: 9px;
+  box-sizing: border-box;
+}
+
+.category_post {
+  background: var(--backArticles);
+  min-height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 15px 15px 0 0;
+  transition: ease 0.3s;
+}
+
+.category_post h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: rgba(0, 0, 24, 0.7);
+  padding: 3px;
+  color: white;
+  width: 100%;
+  height: 8%;
+  border-radius: inherit;
+  font-size: medium;
+  text-align: center;
+  transition: ease;
+}
+
+.category_post:hover {
+  background: rgba(0, 0, 24, 0.7);
+  color: white;
+  border-radius: 0;
+}
+
+.category_post:hover h2 {
+  border-radius: 0;
+}
+
+.category_post:hover .category_post_image {
+  border-radius: 0;
+}
+
+.category_post_image {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.category_post_image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.category_post p {
+  padding: 5px;
+}
+
+.category_post ul {
+  margin: 0;
+  padding-right: 30px;
+}
+
+.cat_detail {
+  margin-bottom: 7px;
+  text-align: justify;
+}
+
+.btn_cat {
+  box-sizing: border-box;
+  position: relative;
+  height: 40px;
+  width: 60%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-top: 1px solid var(--color-button-hov);
+  transition: 0.3s ease;
+  align-self: flex-end;
+  padding-top: 3px;
+}
+
+.category_post:hover .btn_cat {
+  border-top: 3px solid var(--color-categoryHover);
+  color: white;
+  background: var(--color-button);
+  width: 100%;
+}
+
+.btn_cat:hover {
+  background: var(--color-button-hov) !important;
+}
+
+.btn_cat:hover .underLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 99%;
+  height: 7px;
+  box-shadow: inset 0px -7px 0px #39acf3;
+  display: block;
+  animation: underElement 0.2s 1 forwards;
+}

@@ -1,0 +1,394 @@
+.prices {
+  margin-top: 2rem;
+}
+
+.pricesList {
+  width: 90%;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 365px);
+  gap: 1rem;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pricesList_container {
+  border-radius: 15px 15px 0 0;
+  background-image: var(--backArticles);
+  padding: 1rem 1rem 0.3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border: 1px solid var(--border-sub-main);
+}
+
+/* .pricesList:hover .pricesList_container {
+  opacity: 0.7;
+} */
+
+.pricesList:hover .pricesList_container:hover {
+  /* opacity: 1; */
+  transform: translateY(-10px);
+}
+
+.pricesList_container:hover {
+  background: rgb(93 162 239);
+  color: white;
+  border-radius: 0;
+}
+
+.pricesList_container h2,
+h3 {
+  font-family: "Alata", sans-serif;
+  letter-spacing: 1px;
+}
+
+.pricesList_container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba(21, 85, 222, 1);
+  width: 100%;
+  font-size: 22px;
+}
+
+.pricesList_container h3 {
+  font-size: 18px;
+}
+
+.pricesList_container img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.pricesList_container:hover h2 {
+  color: #fff55e;
+}
+
+.pricesList_container:hover h3 {
+  color: #fff55e;
+  border-color: white;
+}
+
+.pricesList_container:hover .pricesDetails span {
+  color: #fff55e;
+}
+
+.pricesList_container:hover .anuncioSpecial {
+  color: #fff55e !important;
+}
+
+.pricesList_container:hover i {
+  color: rgb(21 67 168 / 80%);
+}
+
+.pricesList_container:hover .buttonWrap {
+  color: white;
+}
+
+.pricesList_container:hover .buttonInfo {
+  color: white;
+}
+
+/* Sección tarifas */
+
+.priceRates {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8em;
+  position: relative;
+  border-bottom: 1px solid var(--border-sub-main);
+  padding-bottom: 0.5em;
+  transition: all 0.2s ease;
+}
+
+.priceRates:hover::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  background: #fff55e;
+}
+
+.priceRates_title {
+  width: 100%;
+  margin: 0;
+  color: rgba(21, 85, 222, 0.8);
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pricesList_container:hover .priceRates_title {
+  color: white;
+}
+
+.priceRates strong {
+  font-size: 27px;
+  border-radius: 10px;
+  padding: 5px 5px;
+  color: var(--color-prices);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+}
+
+.priceRates_title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceRates_title p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  /* background: rgba(21, 85, 222, 0.8); */
+  background: rgb(67, 125, 195);
+  color: white;
+  border-radius: 50%;
+  font-size: 17px;
+  transition: all 0.2s ease;
+}
+
+.priceRates:hover .priceRates_title p {
+  border-radius: 1px;
+}
+
+.pricesList_container:hover .priceRates_title p {
+  color: black;
+  background: white;
+}
+
+.pricesList_container:hover .priceRates strong {
+  color: white;
+  border-color: white;
+}
+
+.priceRates:hover strong {
+  color: #fff55e !important;
+}
+
+.priceRates:hover .priceRates_title {
+  color: #fff55e !important;
+}
+
+.priceRates:hover .buttonInfo {
+  color: #fff55e !important;
+}
+
+.btn_price {
+  box-sizing: border-box;
+  /* background: var(--color-title-degrade); */
+  color: rgb(54, 54, 54);
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin: 10px auto;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  letter-spacing: 1px;
+  border: 1px solid rgb(54, 54, 54);
+}
+
+.pricesList_container:hover .btn_price {
+  /* box-shadow: inset 0px -5px 5px -2px rgb(5, 184, 217); */
+  background: rgb(255, 251, 251);
+  color: rgb(54, 54, 54);
+}
+
+.btn_price:hover {
+  transform: translateY(-4px);
+  width: 160px;
+  background: rgb(5, 184, 217);
+  color: white;
+}
+
+.btn_price:active {
+  transform: scale(0.95);
+}
+
+.modalInfo {
+  color: white;
+  background: rgb(0, 0, 0, 0.6);
+  font-size: medium;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  font-weight: 300;
+  padding: 5px 13px;
+  border-radius: 15px;
+  /* line-height: 1.5rem; */
+  text-align: justify;
+  justify-content: flex-start;
+}
+
+.modalInfo p {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: none;
+  align-items: flex-start;
+  margin: 4px 0;
+  justify-content: flex-start;
+}
+
+.pricesList_container:hover .modalInfo p {
+  background: transparent !important;
+  color: white !important;
+}
+
+#asterics {
+  font-size: 20px;
+  border-radius: 0;
+  padding: 0;
+  width: auto;
+  justify-content: flex-start;
+  margin: 0 5px 0 0;
+}
+
+/* .modalInfo:hover {
+  display: flex !important;
+} */
+
+/* Sección detalles del plan (descripción) */
+
+.pricesList_container h3 {
+  color: var(--color-subtitles);
+  border-bottom: 1px solid var(--border-sub-main);
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.pricesDetails {
+  text-align: justify;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.pricesDetails i {
+  color: rgb(243, 122, 42);
+}
+
+/* Sección detalles del plan (Listado Módulos) */
+
+.button-det-modul {
+  background: #3e639f;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.button-det-modul:hover {
+  transform: scale(1.02);
+}
+
+.button-det-modul h3 {
+  color: white;
+  border-bottom: none;
+}
+
+.pricesModules {
+  width: 100%;
+}
+
+.pricesModules--det p {
+  margin: 0;
+  text-align: left;
+  margin-left: 0.8em;
+}
+
+.pricesModules ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricesModules li:nth-of-type(1) {
+  border-bottom: 1px solid var(--color-button-hov);
+  color: white;
+  /* background: rgba(50, 143, 61, 0.8); */
+  background: rgba(21, 85, 222, 0.8);
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.pricesModules li:nth-of-type(1) p {
+  text-align: center;
+}
+
+.pricesModules--det {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7% 75% 18%;
+  margin-bottom: 11px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #cacaca;
+  padding-bottom: 5px;
+  padding-left: 1em;
+}
+
+.pricesModules--det p:nth-of-type(2) {
+  text-align: center;
+}
+
+.check {
+  color: rgb(50, 143, 61);
+  margin-right: 5px;
+  align-self: center;
+}
+
+.pricesList_container:hover .check {
+  /* color: rgb(3 86 214 / 76%); */
+  color: white;
+}
+
+.priceRates_observEsp {
+  color: #5e5e5e;
+  font-weight: bold;
+  width: 100%;
+}
+
+.priceRates_observEsp p {
+  margin: 1px auto;
+  width: 60%;
+  text-align: center;
+}
+
+.anuncioSpecial {
+  color: rgba(21, 85, 222, 0.8) !important;
+  font-weight: 400;
+  font-size: 0.7em !important;
+}
+
+/* media Querys */
+
+@media screen and (max-width: 375px) {
+  .pricesList {
+    width: 100%;
+  }
+}

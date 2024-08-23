@@ -1,0 +1,35 @@
+.article {
+  background: var(--backArticles);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.article-image {
+  /* width: 40%; */
+  object-fit: contain;
+  margin: 5px;
+  border-radius: 0 20px 0 0;
+  height: 300px;
+}
+
+.article-det {
+  margin: 5px;
+  width: 50%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 770px) {
+  .article-image {
+    /* width: 80%; */
+    margin: 0 auto;
+  }
+
+  .article-det {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
