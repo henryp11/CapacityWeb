@@ -17,21 +17,27 @@ function MenuLinks(props) {
       url: '/soporte',
       specialClass: '',
     },
-
     {
       idList: '03',
+      name: 'Tutoriales',
+      url: '/tutoriales',
+      specialClass: '',
+    },
+
+    {
+      idList: '04',
       name: '¿Eres Contador?',
       url: '/sigem-contadores',
       specialClass: '',
     },
     {
-      idList: '04',
+      idList: '05',
       name: 'Trabaja con Nosotros',
       url: '/trabaja-con-nosotros',
       specialClass: '',
     },
     {
-      idList: '05',
+      idList: '06',
       name: 'Contacto',
       url: '/contactanos',
       specialClass: '',
