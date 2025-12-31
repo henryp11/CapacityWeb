@@ -147,7 +147,7 @@ button {
   background: var(--color-icon);
   color: white;
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 30px;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -163,8 +163,8 @@ button {
 /* Menu Principal */
 .header {
   display: flex;
-  height: 80px;
-  justify-content: space-between;
+  height: 90px;
+  justify-content: space-evenly;
   align-items: center;
   background: var(--color-menu);
   padding: 0;
@@ -176,13 +176,12 @@ button {
 .header_logo {
   margin: 0;
   padding: 5px;
-  padding-left: 10px;
   position: relative;
-  width: 30%;
 }
 
 .header_logo img {
   width: 100%;
+  height: 88px;
 }
 
 .header_logo_Link {
@@ -295,6 +294,38 @@ button {
   color: var(--underline);
 }
 
+.social_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 4px;
+  color: inherit;
+  width: 100px;
+  height: 100%;
+}
+
+.social_menu a {
+  width: 100%;
+  height: 35%;
+  margin: 6px;
+  color: var(--color-title-sections);
+  transition: all 0.2s ease;
+}
+
+.social_menu a svg {
+  width: 100%;
+  height: 100%;
+}
+
+.social_menu a:hover {
+  color: var(--underline);
+}
+
+.social_footer {
+  flex-direction: row;
+}
+
 /* Clase para activar NavLink Debe llamarse active */
 
 .active {
@@ -304,21 +335,25 @@ button {
 }
 
 /* final Menu Principal */
+/*Footer*/
 
 footer {
   width: 100%;
   margin-top: 2rem;
   border-top: 1px solid var(--border-sub-main);
   font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer div {
-  width: 95%;
-  margin: 0 auto;
+  width: 50%;
+  /* margin: 0 auto; */
   padding: 5px;
+  text-align: center;
 }
-
-/*Footer*/
 
 /*Final Footer*/
 
@@ -573,6 +608,8 @@ footer div {
 @media screen and (max-width: 770px) {
   .header {
     height: 70px;
+    justify-content: space-between;
+    padding: 4px;
   }
 
   .header figure {
@@ -618,6 +655,12 @@ footer div {
     text-align: center;
   }
 
+  footer div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   /* .menu {
     width: 70%;
   } */
@@ -627,8 +670,12 @@ footer div {
   }
 
   #button-up {
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
+  }
+
+  .hide {
+    display: none;
   }
 }
 

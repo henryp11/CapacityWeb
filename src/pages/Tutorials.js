@@ -11,14 +11,14 @@ const Tutorials = () => {
       idDiv: 1,
       title: 'Manual Online Sigem Software',
       text: `Accede a nuestro manual en linea para el manejo de nuestro ERP SiGeM Software. Así como aprender varios conceptos y funcionalidades de cada módulo.`,
-      link: 'https://capacity-soft.com/manual_online',
+      link: 'https://capacity-soft.com/manual_online/index.html',
       nameLink: 'SiGeM - Manual Online',
     },
     {
       idDiv: 2,
       title: 'Video Tutoriales Sigem Software',
       text: `Conoce el funcionamiento de nuestro ERP Sigem Software mediante videos detallados de cada módulo, con ejemplos, explicaciones y todo el recorrido desde lo más básico hasta los temas mas específicos para cada módulo`,
-      link: 'https://capacity-soft.com/tutoriales_online',
+      link: 'https://capacity-soft.com/tutoriales_online/index.html',
       nameLink: 'SiGeM - Videos Online',
     },
     {
